@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reminder App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 100%;
+            height: 700px;
+            text-align: center;
+            background: linear-gradient(rgb(213, 164, 220),rgb(237, 142, 142));
+            background-repeat: no-repeat;
+        }
+
+        #reminder-form {
+            margin: 20px;
+        }
+
+        #reminder-list {
+            margin: 20px;
+        }
+
+        .reminder-item {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        #time-left {
+            font-weight: bold;
+        }
+        input{
+            border-radius: 10px;
+            border-color: #ccc;
+            padding: 10px;
+            width:200px;
+        }
+        button{
+            color:white;
+            background-color: rgb(28, 76, 132);
+            border-radius: 10px;
+            padding:7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reminder</h1>
+    <div id="reminder-form">
+        <input type="text" id="reminder" placeholder="Enter your reminder">
+        <input type="datetime-local" id="datetime"><br><br>
+        <button id="add-reminder">Add Reminder</button>
+    </div>
+    <div id="reminder-list">
+
+    </div>
+    <a href="todolist.html"> To-Do List </a>
+
+    <script src="script3.js"></script>
+
+</body>
+
+</html>
